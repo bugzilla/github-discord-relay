@@ -14,6 +14,7 @@ This app has python dependencies, and requires a virtualenv to be set up for it.
 
 * `cd` into the directory containing the app
 * `virtualenv venv`
+* `source venv/bin/activate`
 * `pip install -r requirements.txt`
 
 Note that the version of python installed in the virtualenv needs to match the one that mod_wsgi was compiled for.
