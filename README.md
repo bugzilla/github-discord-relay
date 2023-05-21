@@ -1,4 +1,4 @@
-= GitHub Discord Relay
+# GitHub Discord Relay
 
 This is an app that can be set as a target for outgoing GitHub webhooks, and can in turn relay those webhook requests to a Discord incoming webhook.
 
@@ -6,7 +6,7 @@ GitHub can already send directly to Discord, but the problem lies when you set u
 
 So this is basically a dumb relay, except that it can filter the repositories.
 
-== Installation
+## Installation
 
 This app is designed to run under mod_wsgi on Apache HTTPd, and requires Python 3.8 or newer.
 
@@ -34,7 +34,7 @@ You can put the config file wherever you want, as long as you update the SetEnv 
 
 The WSGIScriptAlias line above points the /github path after the domain to point at the app. If it's the only thing you have on the domain, you can just leave it as / . Or change it to whatever path you want.
 
-== Config file format
+## Config file format
 
 Example config:
 ``` json
