@@ -1,0 +1,5 @@
+# ignore Mac droppings
+.DS_Store
+
+# ignore the virtualenv if it's set up
+venv
