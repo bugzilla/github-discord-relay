@@ -108,7 +108,7 @@ def application(environ, start_response):
     ghdata = {}
     try:
         ghdata = json.loads(body)
-    except json.JSONDecodeError(msg, doc, pos):
+    except json.JSONDecodeError:
         return error400_response(environ, start_response,
                 "Payload data is not valid JSON",
                 "Payload data is not valid JSON")
