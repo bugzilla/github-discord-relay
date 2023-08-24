@@ -56,7 +56,7 @@ Example config:
 }
 ```
 
-`webhook_id` should be a UUID or similar. It's basically pretty arbitrary. Whatever you use for this would be placed after the url to your app deployment. For example, if your WSGIScriptAlias points at `/webhooks` then your webhook URL that you put in the config on GitHub for thr webhook will be: `https:/my.server.tld/webhooks/{webhook_id}`
+`webhook_id` should be a UUID or similar. It's basically pretty arbitrary. Whatever you use for this would be placed after the url to your app deployment. For example, if your WSGIScriptAlias points at `/webhooks` then your webhook URL that you put in the config on GitHub for thr webhook will be: `https://my.server.tld/webhooks/{webhook_id}`
 
 `destination_webhook` needs to be the full URL assigned to the webhook by Discord when you set it up in the Discord config, followed by `/github`.
 
